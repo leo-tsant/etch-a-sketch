@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(95, 174, 194);
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  box-shadow: rgba(60, 19, 128, 0.24) 0px 4px 15px;
+}
+
+.grid-item {
+  width: calc(100% / 16); /* Default size 16 x 16 grid */
+  height: calc(100% / 16); /* Default size 16 x 16 grid */
+  background-color: lightblue;
+  transition: background-color 0.2s ease;
+}
+
+.grid-item.hovered {
+  background-color: rgb(51, 51, 170);
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: rgb(38, 90, 133);
+  color: rgb(213, 229, 253);
+  width: 150px;
+  height: 2em;
+  font-weight: 600;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#title {
+  font-size: 50px;
+  text-align: center;
+  color: rgb(38, 90, 133);
+  margin-bottom: 0.2em;
+  font-weight: 800;
+}
+
+button:hover {
+  background-color: rgb(24, 101, 224);
+  color: rgb(214, 214, 228);
+}
+
+.below-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(38, 90, 133);
+  font-size: 30px;
+  font-weight: 600;
+  align-items: center;
+}
